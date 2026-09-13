@@ -29,7 +29,7 @@ with sync_playwright() as p:
     registration_button.click()
 
     # Сохраняем состояние браузера (куки и localStorage) в файл для дальнейшего использования
-    context.storage_state(path='browser-state.json')
+    context.storage_state(path='../browser-state.json')
 
     # Проверяем наличие заголовка 'Dashboard'
     dashboard_header = page.get_by_test_id('dashboard-toolbar-title-text')
