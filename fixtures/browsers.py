@@ -1,6 +1,6 @@
 import pytest
-from playwright.sync_api import Playwright, \
-    Page  # Импортируем класс страницы, будем использовать его для аннотации типов
+from playwright.sync_api import Page  # Импортируем класс страницы, будем использовать его для аннотации типов
+from playwright.sync_api import Playwright
 
 
 @pytest.fixture
